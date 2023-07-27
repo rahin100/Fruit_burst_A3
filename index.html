@@ -31,7 +31,43 @@
 
   <header class="max-w-screen-xl mx-auto">
     <!-- navbar section start -->
-
+    <div class="navbar lg:bg-[#F85559] relative rounded-full my-[20px]">
+      <div class="navbar-start">
+        <div>
+          <ul class="hidden lg:flex justify-center items-center gap-[30px] text-white text-[18px] font-[500] pl-[30px]">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex -order-1 lg:flex lg:order-none justify-center items center flex-shrink-0 gap-2 ">
+        <img src="images/logo.png" alt="">
+        <a class="text-black text-[20px] lg:text-white font-[700] lg:text-[40px]">Fruit Burst</a>
+      </div>
+      <div class="navbar-end">
+        <div class="hidden sm:block">
+          <input type="text" placeholder="Search here" class="input input-bordered w-[300px] border-none rounded-full pr-[50px] mr-[30px]"/>
+        </div>
+      </div>
+      <div class="sm:hidden dropdown">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </label>
+        <ul tabindex="0" class="menu -translate-x-14 menu-sm dropdown-content mt-3 z-[1] -p-2 shadow bg-[#F85559] text-white rounded-box">
+          <li><a>Homepage</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+      <div class="hidden sm:block">
+        <div class="absolute left-[calc(100%-70px)] bottom-6">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
     <!-- navbar section end -->
 
     <!-- banner section start -->
@@ -107,7 +143,7 @@
     </div>
     <!-- extra banner -->
     <div
-      class="hidden sm:block lg:flex justify-around items-center bg-white w-[60%] h-[200px] shadow-lg shadow-white-500/50 absolute bottom-28 left-[20rem]">
+      class="hidden sm:block lg:flex justify-around items-center bg-white w-[60%] h-[200px] shadow-lg shadow-white-500/50 absolute bottom-0 left-[20rem]">
       <div>
         <img src="images/fruit1.png" alt="">
         <p class="text-center">Berries</p>
@@ -137,7 +173,8 @@
       <div class="lg:flex lg:justify-between">
         <div>
           <h2 class="text-3xl text-center lg:text-left  lg:text-5xl text-[#121212] font-[800]">Deal of the day</h2>
-          <p class="text-[12px] text-center lg:text-left lg:text-base text-[#12121299] lg:w-[600px] mt-5 pb-12">Contrary to popular belief, is
+          <p class="text-[12px] text-center lg:text-left lg:text-base text-[#12121299] lg:w-[600px] mt-5 pb-12">Contrary
+            to popular belief, is
             not simply random
             text. It has roots in a piece of classical Latin
             literature
@@ -438,7 +475,7 @@
         belief, is not
         simply random text. It has roots in a piece of classical Latin literature
         from 45 BC, making it over 2000 years old.</p>
-      <div class="flex flex-col lg:flex-row justify-evenly items-center p-[10px]">
+      <div class="flex flex-col lg:flex-row lg:justify-evenly items-center p-[10px]">
         <div class="left_div">
           <!-- 1st content div  -->
           <div
@@ -486,7 +523,7 @@
             </div>
           </div>
         </div>
-        <div class="lg:center_div">
+        <div class="flex -order-1 pb-4 lg:flex lg:order-none ">
           <img class="-mt-[30px] lg:-mt-[80px] h-[485px]" src="images/whychoose1.png" alt="">
         </div>
         <div class="right_div">
